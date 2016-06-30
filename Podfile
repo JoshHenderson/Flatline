@@ -6,14 +6,8 @@ target 'Flatline' do
     use_frameworks!
     
     # Pods for Flatline
-    def testing_pods
-    pod 'Quick'
-    pod 'Nimble'
 end
 target 'FlatlineTests' do
     inherit! :search_paths
     # Pods for testing
-    testing_pods
-end
-
 end
