@@ -1,0 +1,10 @@
+framework module Flatline {
+  umbrella header "Flatline.h"
+
+  export *
+  module * { export * }
+}
+
+module Flatline.Swift {
+    header "Flatline-Swift.h"
+}

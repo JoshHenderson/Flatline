@@ -20,8 +20,8 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
     public static let sharedInstance = RequestManager()
     private override init() {}
     
-    private var registeredNetworkFramework: RequestFrameworkProtocol?
-    public func registerNetworkFramework(framework: RequestFrameworkProtocol!) {
+    private var registeredNetworkFramework: RequestFrameworkProtocol.Type?
+    public func registerNetworkFramework(framework: RequestFrameworkProtocol.Type!) {
         registeredNetworkFramework = framework
     }
     
@@ -46,9 +46,9 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
                "A Network Framework Needs to be Registered to the RequestManager using -registerNetworkFramework")
         
         registeredNetworkFramework!.executeRequestWithHTTPMethod!(httpMethod,
-                                                                 urlString: urlString,
-                                                                 parameters: parameters,
-                                                                 completion: { [weak self] (request, response, data, error) in
+                                                                  urlString: urlString,
+                                                                  parameters: parameters,
+                                                                  completion: { [weak self] (request, response, data, error) in
                                                                     self!.registeredResponseDataMapper?.parsedDictionaryFromData!(data,
                                                                         completion: { (parsedData, error) in
                                                                             completion(parsedData, error)
@@ -62,7 +62,8 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
 //                encoding: .JSON,
 //                headers: nil)
 //                .validate()
-//                .response { (request, response, data, error) in
+//                .response { (request, response, data, eclassrror) in
+        
 //                    //Reachability Madness
 //                    completion(request, response, data, error)
 //            }

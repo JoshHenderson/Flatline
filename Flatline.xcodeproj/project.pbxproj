@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24835636A7F4F58BDD78D4F4 /* Pods_FlatlineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A52C850E03421866625888 /* Pods_FlatlineTests.framework */; };
 		287F53EF1D25994500836FAB /* Flatline.h in Headers */ = {isa = PBXBuildFile; fileRef = 287F53EE1D25994500836FAB /* Flatline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		287F53F61D25994500836FAB /* Flatline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287F53EB1D25994500836FAB /* Flatline.framework */; };
 		287F53FB1D25994500836FAB /* FlatlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 287F53FA1D25994500836FAB /* FlatlineTests.m */; };
@@ -16,6 +17,7 @@
 		287F54191D25A56A00836FAB /* ResposeDataMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54181D25A56A00836FAB /* ResposeDataMapperProtocol.swift */; };
 		287F541B1D25A59500836FAB /* BaseRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F541A1D25A59500836FAB /* BaseRequestFactory.swift */; };
 		287F541F1D25A83A00836FAB /* BaseResponseDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */; };
+		95A09B10BDC159CFEC359EAB /* Pods_Flatline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC47A862BDAED9F9108908A /* Pods_Flatline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CC47A862BDAED9F9108908A /* Pods_Flatline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flatline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A52C850E03421866625888 /* Pods_FlatlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		287F53EB1D25994500836FAB /* Flatline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flatline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		287F53EE1D25994500836FAB /* Flatline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flatline.h; sourceTree = "<group>"; };
 		287F53F01D25994500836FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +45,10 @@
 		287F54181D25A56A00836FAB /* ResposeDataMapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResposeDataMapperProtocol.swift; path = Response/ResposeDataMapperProtocol.swift; sourceTree = "<group>"; };
 		287F541A1D25A59500836FAB /* BaseRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRequestFactory.swift; path = Requests/RequestFactory/BaseRequestFactory.swift; sourceTree = "<group>"; };
 		287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseResponseDataMapper.swift; path = Response/BaseDataMapper/BaseResponseDataMapper.swift; sourceTree = "<group>"; };
+		584C8AF3C8660B4B9FE616D7 /* Pods-FlatlineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatlineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatlineTests/Pods-FlatlineTests.release.xcconfig"; sourceTree = "<group>"; };
+		79E4F7C898F9FA973B6C8488 /* Pods-Flatline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flatline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flatline/Pods-Flatline.release.xcconfig"; sourceTree = "<group>"; };
+		DE5640DA4BB0D97E8E8CD9F9 /* Pods-Flatline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flatline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flatline/Pods-Flatline.debug.xcconfig"; sourceTree = "<group>"; };
+		EC6E44F98CBFC0560702A1D0 /* Pods-FlatlineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatlineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlatlineTests/Pods-FlatlineTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A09B10BDC159CFEC359EAB /* Pods_Flatline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287F53F61D25994500836FAB /* Flatline.framework in Frameworks */,
+				24835636A7F4F58BDD78D4F4 /* Pods_FlatlineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 				287F53ED1D25994500836FAB /* Flatline */,
 				287F53F91D25994500836FAB /* FlatlineTests */,
 				287F53EC1D25994500836FAB /* Products */,
+				E9DF61A0009AE56B0F1C41E6 /* Pods */,
+				7F8ACE0D0B0BA8C25FDB7ADE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +164,26 @@
 			name = BaseDataMapper;
 			sourceTree = "<group>";
 		};
+		7F8ACE0D0B0BA8C25FDB7ADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CC47A862BDAED9F9108908A /* Pods_Flatline.framework */,
+				26A52C850E03421866625888 /* Pods_FlatlineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9DF61A0009AE56B0F1C41E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE5640DA4BB0D97E8E8CD9F9 /* Pods-Flatline.debug.xcconfig */,
+				79E4F7C898F9FA973B6C8488 /* Pods-Flatline.release.xcconfig */,
+				EC6E44F98CBFC0560702A1D0 /* Pods-FlatlineTests.debug.xcconfig */,
+				584C8AF3C8660B4B9FE616D7 /* Pods-FlatlineTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -170,10 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 287F53FF1D25994500836FAB /* Build configuration list for PBXNativeTarget "Flatline" */;
 			buildPhases = (
+				4B8671DE5F12940C2ADDA3A4 /* 📦 Check Pods Manifest.lock */,
 				287F53E61D25994500836FAB /* Sources */,
 				287F53E71D25994500836FAB /* Frameworks */,
 				287F53E81D25994500836FAB /* Headers */,
 				287F53E91D25994500836FAB /* Resources */,
+				BA7562F3AF7635FC624317FD /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 287F54021D25994500836FAB /* Build configuration list for PBXNativeTarget "FlatlineTests" */;
 			buildPhases = (
+				922C084A4BCBCBD2ADB216FD /* 📦 Check Pods Manifest.lock */,
 				287F53F11D25994500836FAB /* Sources */,
 				287F53F21D25994500836FAB /* Frameworks */,
 				287F53F31D25994500836FAB /* Resources */,
+				A3F5AF1CD4C825C22E6E6F4B /* 📦 Embed Pods Frameworks */,
+				F2A2642918CDC1EA3146BE43 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +290,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B8671DE5F12940C2ADDA3A4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		922C084A4BCBCBD2ADB216FD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F5AF1CD4C825C22E6E6F4B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlatlineTests/Pods-FlatlineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7562F3AF7635FC624317FD /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flatline/Pods-Flatline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A2642918CDC1EA3146BE43 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlatlineTests/Pods-FlatlineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		287F53E61D25994500836FAB /* Sources */ = {
@@ -379,14 +494,17 @@
 		};
 		287F54001D25994500836FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE5640DA4BB0D97E8E8CD9F9 /* Pods-Flatline.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Flatline/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Henderson.Flatline";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,14 +515,17 @@
 		};
 		287F54011D25994500836FAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E4F7C898F9FA973B6C8488 /* Pods-Flatline.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Flatline/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Henderson.Flatline";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +535,7 @@
 		};
 		287F54031D25994500836FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6E44F98CBFC0560702A1D0 /* Pods-FlatlineTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FlatlineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -424,6 +546,7 @@
 		};
 		287F54041D25994500836FAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584C8AF3C8660B4B9FE616D7 /* Pods-FlatlineTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FlatlineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -451,6 +574,7 @@
 				287F54011D25994500836FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		287F54021D25994500836FAB /* Build configuration list for PBXNativeTarget "FlatlineTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +583,7 @@
 				287F54041D25994500836FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
