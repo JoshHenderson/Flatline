@@ -13,6 +13,9 @@
 		287F540E1D259A4000836FAB /* RequestFrameworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F540D1D259A4000836FAB /* RequestFrameworkProtocol.swift */; };
 		287F54131D259ACB00836FAB /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54121D259ACB00836FAB /* BaseNetworkService.swift */; };
 		287F54151D259AD400836FAB /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54141D259AD400836FAB /* RequestManager.swift */; };
+		287F54191D25A56A00836FAB /* ResposeDataMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54181D25A56A00836FAB /* ResposeDataMapperProtocol.swift */; };
+		287F541B1D25A59500836FAB /* BaseRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F541A1D25A59500836FAB /* BaseRequestFactory.swift */; };
+		287F541F1D25A83A00836FAB /* BaseResponseDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		287F540D1D259A4000836FAB /* RequestFrameworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestFrameworkProtocol.swift; path = Requests/RequestFrameworkProtocol.swift; sourceTree = "<group>"; };
 		287F54121D259ACB00836FAB /* BaseNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNetworkService.swift; path = BaseNetworkService/BaseNetworkService.swift; sourceTree = "<group>"; };
 		287F54141D259AD400836FAB /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestManager.swift; path = Requests/RequestManager/RequestManager.swift; sourceTree = "<group>"; };
+		287F54181D25A56A00836FAB /* ResposeDataMapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResposeDataMapperProtocol.swift; path = Response/ResposeDataMapperProtocol.swift; sourceTree = "<group>"; };
+		287F541A1D25A59500836FAB /* BaseRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRequestFactory.swift; path = Requests/RequestFactory/BaseRequestFactory.swift; sourceTree = "<group>"; };
+		287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseResponseDataMapper.swift; path = Response/BaseDataMapper/BaseResponseDataMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +83,11 @@
 		287F53ED1D25994500836FAB /* Flatline */ = {
 			isa = PBXGroup;
 			children = (
-				287F54171D259ADD00836FAB /* BaseNetworkManager */,
+				287F54171D259ADD00836FAB /* BaseNetworkService */,
 				287F53EE1D25994500836FAB /* Flatline.h */,
 				287F53F01D25994500836FAB /* Info.plist */,
 				287F540F1D259A4400836FAB /* Requests */,
+				287F541D1D25A5A100836FAB /* Response */,
 			);
 			path = Flatline;
 			sourceTree = "<group>";
@@ -97,6 +104,7 @@
 		287F540F1D259A4400836FAB /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				287F541C1D25A59B00836FAB /* RequestFactory */,
 				287F54161D259AD800836FAB /* RequestManager */,
 				287F540D1D259A4000836FAB /* RequestFrameworkProtocol.swift */,
 			);
@@ -111,12 +119,37 @@
 			name = RequestManager;
 			sourceTree = "<group>";
 		};
-		287F54171D259ADD00836FAB /* BaseNetworkManager */ = {
+		287F54171D259ADD00836FAB /* BaseNetworkService */ = {
 			isa = PBXGroup;
 			children = (
 				287F54121D259ACB00836FAB /* BaseNetworkService.swift */,
 			);
-			name = BaseNetworkManager;
+			name = BaseNetworkService;
+			sourceTree = "<group>";
+		};
+		287F541C1D25A59B00836FAB /* RequestFactory */ = {
+			isa = PBXGroup;
+			children = (
+				287F541A1D25A59500836FAB /* BaseRequestFactory.swift */,
+			);
+			name = RequestFactory;
+			sourceTree = "<group>";
+		};
+		287F541D1D25A5A100836FAB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				287F54181D25A56A00836FAB /* ResposeDataMapperProtocol.swift */,
+				287F54201D25A85D00836FAB /* BaseDataMapper */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		287F54201D25A85D00836FAB /* BaseDataMapper */ = {
+			isa = PBXGroup;
+			children = (
+				287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */,
+			);
+			name = BaseDataMapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287F541B1D25A59500836FAB /* BaseRequestFactory.swift in Sources */,
+				287F54191D25A56A00836FAB /* ResposeDataMapperProtocol.swift in Sources */,
 				287F54151D259AD400836FAB /* RequestManager.swift in Sources */,
 				287F540E1D259A4000836FAB /* RequestFrameworkProtocol.swift in Sources */,
+				287F541F1D25A83A00836FAB /* BaseResponseDataMapper.swift in Sources */,
 				287F54131D259ACB00836FAB /* BaseNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
