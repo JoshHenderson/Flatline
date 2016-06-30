@@ -16,6 +16,7 @@
 		287F54191D25A56A00836FAB /* ResposeDataMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54181D25A56A00836FAB /* ResposeDataMapperProtocol.swift */; };
 		287F541B1D25A59500836FAB /* BaseRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F541A1D25A59500836FAB /* BaseRequestFactory.swift */; };
 		287F541F1D25A83A00836FAB /* BaseResponseDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */; };
+		28C907B61D25C69300F97A4D /* Flatline.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 28C907B51D25C69300F97A4D /* Flatline.podspec */; };
 		7A4535B0E6490DFB109BF9E2 /* libPods-FlatlineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 537440C34FA14A7B24402AA4 /* libPods-FlatlineTests.a */; };
 		95A09B10BDC159CFEC359EAB /* Pods_Flatline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC47A862BDAED9F9108908A /* Pods_Flatline.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		287F54181D25A56A00836FAB /* ResposeDataMapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResposeDataMapperProtocol.swift; path = Response/ResposeDataMapperProtocol.swift; sourceTree = "<group>"; };
 		287F541A1D25A59500836FAB /* BaseRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRequestFactory.swift; path = Requests/RequestFactory/BaseRequestFactory.swift; sourceTree = "<group>"; };
 		287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseResponseDataMapper.swift; path = Response/BaseDataMapper/BaseResponseDataMapper.swift; sourceTree = "<group>"; };
+		28C907B51D25C69300F97A4D /* Flatline.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flatline.podspec; sourceTree = "<group>"; };
 		537440C34FA14A7B24402AA4 /* libPods-FlatlineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlatlineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		584C8AF3C8660B4B9FE616D7 /* Pods-FlatlineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatlineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatlineTests/Pods-FlatlineTests.release.xcconfig"; sourceTree = "<group>"; };
 		79E4F7C898F9FA973B6C8488 /* Pods-Flatline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flatline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flatline/Pods-Flatline.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		287F53E11D25994500836FAB = {
 			isa = PBXGroup;
 			children = (
+				28C907B51D25C69300F97A4D /* Flatline.podspec */,
 				287F53ED1D25994500836FAB /* Flatline */,
 				287F53F91D25994500836FAB /* FlatlineTests */,
 				287F53EC1D25994500836FAB /* Products */,
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28C907B61D25C69300F97A4D /* Flatline.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
