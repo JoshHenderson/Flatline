@@ -10,6 +10,9 @@
 		287F53EF1D25994500836FAB /* Flatline.h in Headers */ = {isa = PBXBuildFile; fileRef = 287F53EE1D25994500836FAB /* Flatline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		287F53F61D25994500836FAB /* Flatline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287F53EB1D25994500836FAB /* Flatline.framework */; };
 		287F53FB1D25994500836FAB /* FlatlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 287F53FA1D25994500836FAB /* FlatlineTests.m */; };
+		287F54081D25997200836FAB /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54051D25997200836FAB /* BaseNetworkService.swift */; };
+		287F54091D25997200836FAB /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54061D25997200836FAB /* RequestManager.swift */; };
+		287F540A1D25997200836FAB /* Requests in Resources */ = {isa = PBXBuildFile; fileRef = 287F54071D25997200836FAB /* Requests */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		287F53F51D25994500836FAB /* FlatlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		287F53FA1D25994500836FAB /* FlatlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlatlineTests.m; sourceTree = "<group>"; };
 		287F53FC1D25994500836FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287F54051D25997200836FAB /* BaseNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
+		287F54061D25997200836FAB /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		287F54071D25997200836FAB /* Requests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Requests; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		287F53ED1D25994500836FAB /* Flatline */ = {
 			isa = PBXGroup;
 			children = (
+				287F54051D25997200836FAB /* BaseNetworkService.swift */,
+				287F54061D25997200836FAB /* RequestManager.swift */,
+				287F54071D25997200836FAB /* Requests */,
 				287F53EE1D25994500836FAB /* Flatline.h */,
 				287F53F01D25994500836FAB /* Info.plist */,
 			);
@@ -176,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287F540A1D25997200836FAB /* Requests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287F54081D25997200836FAB /* BaseNetworkService.swift in Sources */,
+				287F54091D25997200836FAB /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +320,7 @@
 		287F54001D25994500836FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +331,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Henderson.Flatline";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		287F54011D25994500836FAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
