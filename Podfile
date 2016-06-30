@@ -2,18 +2,18 @@
 # platform :ios, '9.0'
 
 target 'Flatline' do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for Flatline
-def testing_pods
+    # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for Flatline
+    def testing_pods
     pod 'Quick'
     pod 'Nimble'
 end
-  target 'FlatlineTests' do
+target 'FlatlineTests' do
     inherit! :search_paths
     # Pods for testing
     testing_pods
-  end
+end
 
 end
