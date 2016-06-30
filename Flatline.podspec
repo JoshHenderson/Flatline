@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Flatline'
-  s.version          = '1.0.1'
-  s.summary          = 'A short description of Flatline.'
+  s.version          = '1.0.2'
+  s.summary          = 'A Framework to Provide a Base Architecture for a Service Based Network Architecture'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Flatline is meant to provide a Base Architecture for a Service Based Network Architecture. By Subclassing the BaseNetworkService, and registering any Network Framework you choose, it allows you to easily interface with your network layer in an easy to use manner. 
                        DESC
 
   s.homepage         = 'https://github.com/JoshHenderson/Flatline'
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '*.{swift}' 
+  s.source_files = 'Flatline' 
   
   # s.resource_bundles = {
   #   'Flatline' => ['Flatline/Assets/*.png']
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'Quick'
+  # s.dependency 'Quick'
 end
