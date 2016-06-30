@@ -30,7 +30,7 @@ Flatline is meant to provide a Base Architecture for a Service Based Network Arc
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Flatline' 
+  s.source_files = 'Flatline/**/*.{swift}' 
   
   # s.resource_bundles = {
   #   'Flatline' => ['Flatline/Assets/*.png']
