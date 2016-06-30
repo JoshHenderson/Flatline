@@ -10,9 +10,9 @@
 		287F53EF1D25994500836FAB /* Flatline.h in Headers */ = {isa = PBXBuildFile; fileRef = 287F53EE1D25994500836FAB /* Flatline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		287F53F61D25994500836FAB /* Flatline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287F53EB1D25994500836FAB /* Flatline.framework */; };
 		287F53FB1D25994500836FAB /* FlatlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 287F53FA1D25994500836FAB /* FlatlineTests.m */; };
-		287F54081D25997200836FAB /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54051D25997200836FAB /* BaseNetworkService.swift */; };
-		287F54091D25997200836FAB /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54061D25997200836FAB /* RequestManager.swift */; };
-		287F540A1D25997200836FAB /* Requests in Resources */ = {isa = PBXBuildFile; fileRef = 287F54071D25997200836FAB /* Requests */; };
+		287F540E1D259A4000836FAB /* RequestFrameworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F540D1D259A4000836FAB /* RequestFrameworkProtocol.swift */; };
+		287F54131D259ACB00836FAB /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54121D259ACB00836FAB /* BaseNetworkService.swift */; };
+		287F54151D259AD400836FAB /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F54141D259AD400836FAB /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +32,9 @@
 		287F53F51D25994500836FAB /* FlatlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		287F53FA1D25994500836FAB /* FlatlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlatlineTests.m; sourceTree = "<group>"; };
 		287F53FC1D25994500836FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		287F54051D25997200836FAB /* BaseNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
-		287F54061D25997200836FAB /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
-		287F54071D25997200836FAB /* Requests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Requests; sourceTree = "<group>"; };
+		287F540D1D259A4000836FAB /* RequestFrameworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestFrameworkProtocol.swift; path = Requests/RequestFrameworkProtocol.swift; sourceTree = "<group>"; };
+		287F54121D259ACB00836FAB /* BaseNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNetworkService.swift; path = BaseNetworkService/BaseNetworkService.swift; sourceTree = "<group>"; };
+		287F54141D259AD400836FAB /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestManager.swift; path = Requests/RequestManager/RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +77,10 @@
 		287F53ED1D25994500836FAB /* Flatline */ = {
 			isa = PBXGroup;
 			children = (
-				287F54051D25997200836FAB /* BaseNetworkService.swift */,
-				287F54061D25997200836FAB /* RequestManager.swift */,
-				287F54071D25997200836FAB /* Requests */,
+				287F54171D259ADD00836FAB /* BaseNetworkManager */,
 				287F53EE1D25994500836FAB /* Flatline.h */,
 				287F53F01D25994500836FAB /* Info.plist */,
+				287F540F1D259A4400836FAB /* Requests */,
 			);
 			path = Flatline;
 			sourceTree = "<group>";
@@ -93,6 +92,31 @@
 				287F53FC1D25994500836FAB /* Info.plist */,
 			);
 			path = FlatlineTests;
+			sourceTree = "<group>";
+		};
+		287F540F1D259A4400836FAB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				287F54161D259AD800836FAB /* RequestManager */,
+				287F540D1D259A4000836FAB /* RequestFrameworkProtocol.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		287F54161D259AD800836FAB /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				287F54141D259AD400836FAB /* RequestManager.swift */,
+			);
+			name = RequestManager;
+			sourceTree = "<group>";
+		};
+		287F54171D259ADD00836FAB /* BaseNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				287F54121D259ACB00836FAB /* BaseNetworkService.swift */,
+			);
+			name = BaseNetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287F540A1D25997200836FAB /* Requests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287F54081D25997200836FAB /* BaseNetworkService.swift in Sources */,
-				287F54091D25997200836FAB /* RequestManager.swift in Sources */,
+				287F54151D259AD400836FAB /* RequestManager.swift in Sources */,
+				287F540E1D259A4000836FAB /* RequestFrameworkProtocol.swift in Sources */,
+				287F54131D259ACB00836FAB /* BaseNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
