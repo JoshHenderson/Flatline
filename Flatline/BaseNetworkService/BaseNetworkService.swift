@@ -8,9 +8,7 @@
 
 import UIKit
 
-internal let hb_base_environment = ""
-
-@objc (FLBaseNetworkService) class BaseNetworkService : NSObject {
+@objc (FLBaseNetworkService) public class BaseNetworkService : NSObject {
     internal final class func executeURLRequestWithParameters(httpMethod: RequestMethod!,
                                                         urlString: String!,
                                                         parameters: ([String:String])?,
