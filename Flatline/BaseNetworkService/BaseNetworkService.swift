@@ -9,10 +9,10 @@
 import UIKit
 
 @objc (FLBaseNetworkService) public class BaseNetworkService : NSObject {
-    internal final class func executeURLRequestWithParameters(httpMethod: RequestMethod!,
-                                                        urlString: String!,
-                                                        parameters: ([String:String])?,
-                                                        completion: ((responseData: NSDictionary?, error: NSError?) -> ())?) {
+    public final class func executeRequest(httpMethod: RequestMethod!,
+                                           urlString: String!,
+                                           parameters: ([String:String])?,
+                                           completion: ((responseData: NSDictionary?, error: NSError?) -> ())?) {
         RequestManager.sharedInstance.executeRequestWithHTTPMethod(httpMethod,
                                                                    urlString: urlString,
                                                                    parameters: parameters) { (parsedData, error) in

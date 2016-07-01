@@ -8,6 +8,10 @@
 
 import Foundation
 
+@objc (FLResponseDataMapperProtocol) public protocol ResponseDataMapperProtocol {
+    optional func parsedDictionaryFromData(data: NSData!, completion:(NSDictionary?, NSError?) -> ())
+}
+
 @objc (FLBaseResponseDataMapper) public class BaseResponseDataMapper : NSObject, ResponseDataMapperProtocol {
     public final func parsedDictionaryFromData(data: NSData!, completion:(NSDictionary?, NSError?) -> ()) {
         do {

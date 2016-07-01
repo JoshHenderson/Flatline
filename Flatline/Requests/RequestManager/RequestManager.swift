@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Alamofire
 
 @objc public enum RequestMethod : Int {
     case OPTIONS, GET, HEAD, POST, PUT, PATCH, DELETE, TRACE, CONNECT
@@ -54,7 +53,6 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
                                                                             completion(parsedData, error)
                                                                     })
         })
-        
 //        if let httpMethodString = Alamofire.Method(rawValue: httpMethod.rawValue) {
 //            Alamofire.request(httpMethodString,
 //                urlString,
@@ -72,5 +70,4 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
 //            completion(nil, nil, nil, nil)
 //        }
     }
-    
 }
