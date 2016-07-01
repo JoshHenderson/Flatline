@@ -13,6 +13,6 @@ public typealias RequestManagerClosureType = (NSURLRequest?, NSHTTPURLResponse?,
 @objc (FLRequestFrameworkProtocol) public protocol RequestFrameworkProtocol {
     @objc optional static func executeRequestWithHTTPMethod(httpMethod: RequestMethod,
                                                    urlString: String!,
-                                                   parameters: ([String:String])?,
+                                                   parameters: (Dictionary<String, String>)?,
                                                    completion: RequestManagerClosureType)
 }
