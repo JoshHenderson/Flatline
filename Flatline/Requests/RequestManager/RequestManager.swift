@@ -14,13 +14,13 @@ import UIKit
 
 public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
 
-@objc (FLRequestManager) public class RequestManager : NSObject {
+@objc (FLRequestManager) public final class RequestManager : NSObject {
     
     public static let sharedInstance = RequestManager()
     private override init() {}
     
     private var registeredNetworkFramework: RequestFrameworkProtocol.Type?
-    public func registerNetworkFramework(framework: RequestFrameworkProtocol.Type!) {
+    public final func registerNetworkFramework(framework: RequestFrameworkProtocol.Type!) {
         registeredNetworkFramework = framework
     }
     
@@ -33,11 +33,11 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
         }
         set {}
     }
-    public func registerResponseDataMapper(dataMapper: ResponseDataMapperProtocol!) {
+    public final func registerResponseDataMapper(dataMapper: ResponseDataMapperProtocol!) {
         registeredResponseDataMapper = dataMapper
     }
     
-    public func executeRequestWithHTTPMethod(httpMethod: RequestMethod!,
+    public final func executeRequestWithHTTPMethod(httpMethod: RequestMethod!,
                                             urlString: String!,
                                             parameters: ([String:String])?,
                                             completion: ParsedDataResponseClosureType) {

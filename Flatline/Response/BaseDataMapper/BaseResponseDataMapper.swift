@@ -12,7 +12,7 @@ import Foundation
     optional func parsedDictionaryFromData(data: NSData!, completion:(NSDictionary?, NSError?) -> ())
 }
 
-@objc (FLBaseResponseDataMapper) public class BaseResponseDataMapper : NSObject, ResponseDataMapperProtocol {
+@objc (FLBaseResponseDataMapper) public final class BaseResponseDataMapper : NSObject, ResponseDataMapperProtocol {
     public final func parsedDictionaryFromData(data: NSData!, completion:(NSDictionary?, NSError?) -> ()) {
         do {
             let parsedDict = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as! NSDictionary

@@ -43,7 +43,7 @@
 		287F54141D259AD400836FAB /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestManager.swift; path = Requests/RequestManager/RequestManager.swift; sourceTree = "<group>"; };
 		287F541A1D25A59500836FAB /* BaseRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRequestFactory.swift; path = Requests/RequestFactory/BaseRequestFactory.swift; sourceTree = "<group>"; };
 		287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseResponseDataMapper.swift; path = Response/BaseDataMapper/BaseResponseDataMapper.swift; sourceTree = "<group>"; };
-		28C907B51D25C69300F97A4D /* Flatline.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flatline.podspec; sourceTree = "<group>"; };
+		28C907B51D25C69300F97A4D /* Flatline.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flatline.podspec; sourceTree = SOURCE_ROOT; };
 		537440C34FA14A7B24402AA4 /* libPods-FlatlineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlatlineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		584C8AF3C8660B4B9FE616D7 /* Pods-FlatlineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatlineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatlineTests/Pods-FlatlineTests.release.xcconfig"; sourceTree = "<group>"; };
 		79E4F7C898F9FA973B6C8488 /* Pods-Flatline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flatline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flatline/Pods-Flatline.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +75,6 @@
 		287F53E11D25994500836FAB = {
 			isa = PBXGroup;
 			children = (
-				28C907B51D25C69300F97A4D /* Flatline.podspec */,
 				287F53ED1D25994500836FAB /* Flatline */,
 				287F53F91D25994500836FAB /* FlatlineTests */,
 				287F53EC1D25994500836FAB /* Products */,
@@ -97,10 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				287F54171D259ADD00836FAB /* BaseNetworkService */,
-				287F53EE1D25994500836FAB /* Flatline.h */,
-				287F53F01D25994500836FAB /* Info.plist */,
 				287F540F1D259A4400836FAB /* Requests */,
 				287F541D1D25A5A100836FAB /* Response */,
+				28C907B71D261CDA00F97A4D /* Supporting Files */,
 			);
 			path = Flatline;
 			sourceTree = "<group>";
@@ -162,6 +160,16 @@
 				287F541E1D25A83A00836FAB /* BaseResponseDataMapper.swift */,
 			);
 			name = BaseDataMapper;
+			sourceTree = "<group>";
+		};
+		28C907B71D261CDA00F97A4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				287F53EE1D25994500836FAB /* Flatline.h */,
+				28C907B51D25C69300F97A4D /* Flatline.podspec */,
+				287F53F01D25994500836FAB /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7F8ACE0D0B0BA8C25FDB7ADE /* Frameworks */ = {
