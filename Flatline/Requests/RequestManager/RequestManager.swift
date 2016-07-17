@@ -78,7 +78,7 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
         registeredNetworkFramework = framework
     }
     
-    lazy private var registeredResponseDataMapper: ResponseDataMapperProtocol? = BaseResponseDataMapper()
+    lazy private var registeredResponseDataMapper: ResponseDataMapperProtocol.Type? = BaseResponseDataMapper.self
     
     /**
          Used to register a ResponseDataMapper to allow for custom response mapping.
@@ -87,7 +87,7 @@ public typealias ParsedDataResponseClosureType = (AnyObject?, NSError?) -> ()
      
          - Parameter dataMapper: ResponseDataMapperProtocol object that will translate all received ResponseData.
      */
-    public final func registerResponseDataMapper(dataMapper: ResponseDataMapperProtocol!) {
+    public final func registerResponseDataMapper(dataMapper: ResponseDataMapperProtocol.Type!) {
         registeredResponseDataMapper = dataMapper
     }
     

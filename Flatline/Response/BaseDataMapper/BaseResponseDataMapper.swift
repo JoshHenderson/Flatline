@@ -15,7 +15,7 @@ let defaultErrorCode: Int = 601
     Protocol used to define ResponseDataMappers and how they are interacted with from the RequestManager.
  */
 @objc (FLResponseDataMapperProtocol) public protocol ResponseDataMapperProtocol {
-    optional func parsedDictionaryFromData(data: NSData!, completion:(NSDictionary?, NSError?) -> ())
+    optional static func parsedDictionaryFromData(data: NSData!, completion:(NSDictionary?, NSError?) -> ())
 }
 
 /**
@@ -40,6 +40,7 @@ let defaultErrorCode: Int = 601
                                          code: defaultErrorCode,
                                          userInfo: ["error" : parsedDict.objectForKey("error")!])
                 completion(parsedDict, error)
+                return
             }
             completion(parsedDict, nil)
         }
